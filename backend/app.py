@@ -19,7 +19,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from TextProcessing.preprocessing import ChunkPreprocessor
+from .TextProcessing.preprocessing import ChunkPreprocessor
 
 
 # -------------------------
@@ -39,7 +39,7 @@ OUTPUT_FILE = BACKEND_DIR / "final_transcript.txt"
 ENV_PATH = BASE_DIR / ".env"
 
 load_dotenv(ENV_PATH)
-PORT = int(os.getenv("PORT", "5000"))
+PORT = int(os.getenv("PORT", "5001"))
 
 
 # -------------------------
