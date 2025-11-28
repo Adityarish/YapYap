@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>YapYap</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <div class="card">
+    <header class="heading">
+      <div>
+        <p class="eyebrow">YapYap</p>
+        <h2>Realtime STT</h2>
+      </div>
+      <span class="badge" id="status">Idle</span>
+    </header>
+    <div class="mic-wrapper">
+      <button class="mic-button" id="micButton" aria-label="Start listening">
+        <span class="pulse"></span>
+        <span class="pulse delay"></span>
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path d="M12 15c1.66 0 3-1.34 3-3V6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3zm4.3-3c0 2.38-1.92 4.3-4.3 4.3S7.7 14.38 7.7 12H6c0 2.76 2.1 5.04 4.8 5.45V21h2.4v-3.55c2.7-.41 4.8-2.69 4.8-5.45h-1.7z" />
+        </svg>
+      </button>
+      <p class="hint">Tap once to toggle listening</p>
+    </div>
+    <textarea id="output" placeholder="Transcript will appear here..."></textarea>
+    <div id="transcript" class="transcript-box"></div>
+    <div class="action-buttons">
+      <button id="searchBtn">Search</button>
+      <button id="copyBtn">Copy</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

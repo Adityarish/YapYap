@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+faster-whisper
+torch
+numpy
+sounddevice
+transformers
+sentencepiece
+pydantic
+huggingface-hub
+python-dotenv
